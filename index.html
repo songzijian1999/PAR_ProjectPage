@@ -60,16 +60,21 @@
                 <span class="author-block">
                   Sihan Qin<sup>1</sup>,</span>
                   <span class="author-block">
-                    Tianshui Chen<sup>2</sup>,</span>
+                    Tianshui Chen<sup>4,5</sup>,</span>
                     <span class="author-block">
-                      Liang Lin<sup>1</sup>,</span>
+                      Liang Lin<sup>1,2,3,4</sup>,</span>
                       <span class="author-block">
-                        Guangrun Wang<sup>1*</sup>,</span>
+                        Guangrun Wang<sup>1,2,4*</sup>,</span>
                   </span>
                   </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Sun Yat-sen University, GuangZhou, China<br><sup>2</sup>Guangdong University of Technology, GuangZhou, China</span>
+                  <div class="is-size-6 publication-authors">
+                    <span class="author-block">
+                      <sup>1</sup>Sun Yat-sen University&nbsp;&nbsp;&nbsp;&nbsp;
+                      <sup>2</sup>Guangdong Key Laboratory of Big Data Analysis and Processing<br>
+                      <sup>3</sup>Peng Cheng Laboratory&nbsp;&nbsp;&nbsp;&nbsp;
+                      <sup>4</sup>X-Era AI Lab&nbsp;&nbsp;&nbsp;&nbsp;
+                      <sup>5</sup>Guangdong University of Technology</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>corresponding author</small></span>
                   </div>
 
@@ -163,22 +168,81 @@
 
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
+<section class="section" id="titile">
+  <div class="container is-max-desktop content">
+    <h2 class="title">titile</h2>
+    <p>this is some text</p>
+    <p>this is some more text</p>
   </div>
 </section>
-<!-- End teaser video -->
+
+
+<style>
+  .video-grid-container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 1rem;
+  }
+  
+  .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 1行2列布局 */
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+  
+  .video-container {
+      width: 100%;
+      max-width: 90%; /* 适应2列布局的宽度 */
+  }
+  
+  video {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+  }
+  
+  .video-description {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #333;
+  }
+  
+  @media (max-width: 768px) {
+      .video-grid {
+          grid-template-columns: 1fr; /* 移动端单列布局 */
+      }
+      .video-container {
+          max-width: 100%;
+      }
+  }
+</style>
+
+<div class="video-grid-container">
+  <div class="video-grid">
+      <!-- 第一列视频 -->
+      <div class="video-container">
+          <video controls playsinline> <!-- 移除autoplay和loop属性 -->
+              <source src="static/videos/PickCube_prediction_000.mp4" type="video/mp4">
+          </video>
+      </div>
+      
+      <!-- 第二列视频 -->
+      <div class="video-container">
+          <video controls playsinline> <!-- 移除autoplay和loop属性 -->
+              <source src="static/videos/PickCube_simulation_000.mp4" type="video/mp4">
+          </video>
+      </div>
+  </div>
+  
+  <!-- 视频下方的统一说明文字 -->
+  <div class="video-description">
+    The visualization of PushCube task. Left side shows the video generation result from PAR's frame tokens. Right side shows the actual execution video of PAR's predicted actions.
+  </div>
+</div>
+
  
 
 <!--BibTex citation -->
