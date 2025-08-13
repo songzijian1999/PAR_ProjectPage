@@ -168,13 +168,35 @@
 
 
 
-<section class="section" id="titile">
-  <div class="container is-max-desktop content">
-    <h2 class="title">titile</h2>
-    <p>this is some text</p>
-    <p>this is some more text</p>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="item">
+        <!-- replace your image path -->
+        <img src="static/images/phytransformers.svg" alt="image" style="width: 70%; margin: 0 auto; display: block;"/>
+        <h2 class="subtitle" style="text-align: left;">
+        </h2>
+      </div>
+    </div>
   </div>
 </section>
+<!-- End single image display -->
+
+
+
+
+<section class="section" id="Method">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Method</h2>
+    <p>The autoregressive nature provides an ideal foundation for representing the physical world.
+      Based on this insight, this work presents the <strong>Physical Autoregressive Model, PAR</strong>.
+      Specifically, the frame tokens and the action tokens are combined into physical tokens, which effectively represent the joint evolution of robotic manipulation and environmental feedback.
+      To mitigate the scarcity of human demonstrations, we transfer world knowledge from video pretraining (NOVA, Deng et.al 2024) into our PAR model, facilitating a seamless transition from understanding visual dynamics to capturing physical dynamics.</p>
+    <p>Most existing methods rely on discrete token representations to represent visual signals and action signals.
+      This may introduce resolution errors whose accumulation propagates through long-horizon prediction and produces substantial trajectory drift. In this work, we propose to represent both frame and action as continuous signals. Specifically, we leverage the Diffusion-Transformer model (DiT) coupled with Diffusion Loss training objective to model the arbitrary distribution of the continuous frame and action tokens. This design not only improves smoothness and coherence, but also facilitates a deeper mutual interaction between the continuous spaces of vision and action.</p>
+  </div>
+</section>
+
 
 
 <style>
