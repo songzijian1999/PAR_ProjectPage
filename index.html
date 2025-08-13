@@ -198,6 +198,56 @@
 </section>
 
 
+<section class="section" id="Experiment">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Experiment</h2>
+    <p>We use the ManiSkill Benchmark and follow prior works by evaluating the single task scenarios. We specifically focus on three manipulation tasks: PushCube, PickCube, and StackCube. We render 1K demonstrates for each task as training data. Our method achieves the second-best success rate, surprising the ICRT (Fu et.al 2025), only behind RDT (Liu et.al 2024). It is worth noting that RDT require extensive action pretraining, while our method does not.</p>
+    <p>The ablation study compares PAR-Full against two ablated variants: (1) PAR-NoAR, which removes the autoregressive architecture. (1) PAR-Discrete, which replaces the generative de-tokenizer with a discriminative one. PAR-Full consistently outperforms both baselines by a large margin, confirming the effectiveness of our designs.</p>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="item">
+        <!-- replace your image path -->
+        <img src="static/images/exp_1.png" alt="image" style="width: 30%; margin: 0 auto; display: block;"/>
+        <h2 class="subtitle" style="text-align: left;">
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End single image display -->
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="item">
+        <!-- replace your image path -->
+        <img src="static/images/exp_2.png" alt="image" style="width: 30%; margin: 0 auto; display: block;"/>
+        <h2 class="subtitle" style="text-align: left;">
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End single image display -->
+
+
+
+<section class="section" id="Visualization">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Visualization</h2>
+    <p>We visualize the predicted video sequences alongside the corresponding execution videos. The results reveal a clear alignment between the predicted visual trajectories and actual robot actions. This consistency highlights not only the model’s fine-grained scene understanding from video pretraining, but also its effectiveness in transferring that understanding into action planning.</p>
+  </div>
+</section>
+
+
 
 <style>
   .video-grid-container {
