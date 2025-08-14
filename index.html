@@ -132,21 +132,22 @@
 </section>
 
 
-<!-- Single image display (modified from carousel) -->
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div class="item">
-        <!-- replace your image path -->
+      <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+        <!-- 图片保持原有样式 -->
         <img src="static/images/world_envolve.svg" alt="image" style="width: 60%; margin: 0 auto; display: block;"/>
-        <h2 class="subtitle" style="text-align: left;">
-          <strong>The illustration of Physical Autoregression.</strong> Our autoregressive process operates over a sequence of physical tokens (marked by red), each combining the visual world state (marked by orange) and the embodiment state (marked by black), providing a progressive estimate of their joint evolution. This process runs in sync with the environment: at each step, the predicted token is decoded into an image and an action, which interact with the environment to update its state (marked by blue), while the resulting observations and proprios are encoded back into the context.
+        <!-- 图注使用与图片相同的宽度，并左对齐 -->
+        <h2 class="subtitle" style="width: 60%; text-align: left; margin: 0; padding-top: 0.5rem; font-size: 0.9rem;">
+          <strong>The illustration of Physical Autoregression.</strong> Our autoregressive process operates over a sequence of physical tokens (marked by red), each combining the visual world state (marked by orange) and the embodiment state (marked by black). The autoregressive process runs in sync with the environment: at each step, the predicted token is decoded into an image and an action, which interact with the environment to update its state (marked by blue), while the resulting observations and proprios are encoded back into the context.
         </h2>
       </div>
     </div>
   </div>
 </section>
-<!-- End single image display -->
 
 
 <!-- Paper abstract -->
