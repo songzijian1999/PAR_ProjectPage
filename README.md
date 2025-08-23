@@ -13,13 +13,32 @@ The scarcity of manipulation data has motivated the use of pretrained large mode
 ---
 
 <p align="center">
-  <img src="static/images/phytransformers.svg" alt="示例图片（请替换为你的图片链接）" width="800">
+  <img src="static/images/phytransformers.svg" alt="" width="800">
 </p>
 
 <p align="center">
   <em>Fig 1: The illustration of Physical Autoregressive Model.</em>
 </p>
 
+
+---
+
+
+## Experimental Results
+We use the ManiSkill Benchmark and follow prior works by evaluating the single task scenarios. We specifically focus on three manipulation tasks: PushCube, PickCube, and StackCube. We render 1K demonstrates for each task as training data. Our method achieves the second-best success rate, surprising the ICRT (Fu et.al 2025), only behind RDT (Liu et.al 2024). It is worth noting that RDT require extensive action pretraining, while our method does not.
+
+The ablation study compares PAR-Full against two ablated variants: (1) PAR-NoAR, which removes the autoregressive architecture. (1) PAR-Discrete, which replaces the generative de-tokenizer with a discriminative one. PAR-Full consistently outperforms both baselines by a large margin, confirming the effectiveness of our designs.
+
+
+---
+
+<p align="center">
+  <img src="static/images/exp_1.png" alt="" width="400">
+</p>
+
+<p align="center">
+  <img src="static/images/exp_2.png" alt="" width="400">
+</p>
 
 
 ## Detailed code coming soon
