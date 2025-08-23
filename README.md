@@ -1,53 +1,22 @@
-# Academic Project Page Template
-This is an academic paper project page template.
+<!-- [![Website Badge](https://raw.githubusercontent.com/referit3d/referit3d/eccv/images/project_website_badge.svg)]() -->
+[![arXiv](https://img.shields.io/badge/arXiv-2508.09822-b31b1b.svg?style=plastic)]()
+# Physical Autoregressive Model for Robotic Manipulation without Action Pretraining
+This is the official PyTorch implementation of "Physical Autoregressive Model for Robotic Manipulation without Action Pretraining"
 
 
-Example project pages built using this template are:
-- https://horwitz.ai/probex
-- https://vision.huji.ac.il/probegen
-- https://horwitz.ai/mother
-- https://horwitz.ai/spectral_detuning
-- https://vision.huji.ac.il/ladeda
-- https://vision.huji.ac.il/dsire
-- https://horwitz.ai/podd
-- https://dreamix-video-editing.github.io
-- https://horwitz.ai/conffusion
-- https://horwitz.ai/3d_ads/
-- https://vision.huji.ac.il/ssrl_ad
-- https://vision.huji.ac.il/deepsim
+## Abstract
+The scarcity of manipulation data has motivated the use of pretrained large models from other modalities in robotics. In this work, we build upon autoregressive video generation models to propose a Physical Autoregressive Model (PAR), where physical tokens combine frames and actions to represent the joint evolution of the robot and its environment. PAR leverages the world knowledge embedded in video pretraining to understand physical dynamics without requiring action pretraining, enabling accurate video prediction and consistent action trajectories. It also adopts a DiT-based de-tokenizer to model frames and actions as continuous tokens, mitigating quantization errors and facilitating mutual enhancement. Furthermore, we incorporate a causal mask with inverse kinematics, parallel training, and the KV-cache mechanism to further improve performance and efficiency. Experiments on the ManiSkill benchmark show that PAR achieves a 100% success rate on the PushCube task, matches the performance of action-pretrained baselines on other tasks, and accurately predicts future videos with tightly aligned action trajectories. These findings underscore a promising direction for robotic manipulation by transferring world knowledge from autoregressive video pretraining.
+
+---
+
+<p align="center">
+  <img src="static/images/phytransformers.svg" alt="示例图片（请替换为你的图片链接）" width="800">
+</p>
+
+<p align="center">
+  <em>Fig 1: The illustration of Physical Autoregressive Model.</em>
+</p>
 
 
 
-## Start using the template
-To start using the template click on `Use this Template`.
-
-The template uses html for controlling the content and css for controlling the style. 
-To edit the websites contents edit the `index.html` file. It contains different HTML "building blocks", use whichever ones you need and comment out the rest.  
-
-**IMPORTANT!** Make sure to replace the `favicon.ico` under `static/images/` with one of your own, otherwise your favicon is going to be a dreambooth image of me.
-
-## Components
-- Teaser video
-- Images Carousel
-- Youtube embedding
-- Video Carousel
-- PDF Poster
-- Bibtex citation
-
-## Tips:
-- The `index.html` file contains comments instructing you what to replace, you should follow these comments.
-- The `meta` tags in the `index.html` file are used to provide metadata about your paper 
-(e.g. helping search engine index the website, showing a preview image when sharing the website, etc.)
-- The resolution of images and videos can usually be around 1920-2048, there rarely a need for better resolution that take longer to load. 
-- All the images and videos you use should be compressed to allow for fast loading of the website (and thus better indexing by search engines). For images, you can use [TinyPNG](https://tinypng.com), for videos you can need to find the tradeoff between size and quality.
-- When using large video files (larger than 10MB), it's better to use youtube for hosting the video as serving the video from the website can take time.
-- Using a tracker can help you analyze the traffic and see where users came from. [statcounter](https://statcounter.com) is a free, easy to use tracker that takes under 5 minutes to set up. 
-- This project page can also be made into a github pages website.
-- Replace the favicon to one of your choosing (the default one is of the Hebrew University). 
-- Suggestions, improvements and comments are welcome, simply open an issue or contact me. You can find my contact information at [https://horwitz.ai](https://horwitz.ai)
-
-## Acknowledgments
-Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
-
-## Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+## Detailed code coming soon
