@@ -1,7 +1,7 @@
 <!-- [![Website Badge](https://raw.githubusercontent.com/referit3d/referit3d/eccv/images/project_website_badge.svg)]() -->
 [![arXiv](https://img.shields.io/badge/arXiv-2508.09822-b31b1b.svg?style=plastic)]()
 # Physical Autoregressive Model for Robotic Manipulation without Action Pretraining
-This is the official PyTorch implementation of "Physical Autoregressive Model for Robotic Manipulation without Action Pretraining"
+This is the official PyTorch implementation of **Physical Autoregressive Model for Robotic Manipulation without Action Pretraining**
 
 
 [📘paper](https://arxiv.org/abs/2508.09822) |
